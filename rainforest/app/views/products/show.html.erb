@@ -1,0 +1,7 @@
+<%= link_to "Back to Home", products_url%> | <%= link_to "Edit Product", edit_product_path(@product) %> |
+<%= link_to "Delete", @product, :confirm => "You Sure?", :method => :delete %>
+
+<p>Name: <%= @product[:name] %></p>
+<p>Description: <%= @product[:description] %></p>
+<p>Price: <%= @product.formatted_price %></p>
+
